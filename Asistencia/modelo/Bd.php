@@ -1,8 +1,8 @@
 <?php
 class Bd{
     private $server = "localhost:3306";
-    private $usuario = "root";
-    private $pass = "marsupilami00";
+    private $usuario = "user";
+    private $pass = "";
     private $basedatos = "ListaDeEstudiantes";
 
     private $conexion;
