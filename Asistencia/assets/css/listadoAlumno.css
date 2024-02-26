@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  font-family: Arial, sans-serif;
+  /* Agregamos una fuente por defecto */
+}
+
+.head {
+  width: 100%;
+  color: white;
+  background-color: #c2002f;
+  padding: 1% 0;
+  /* Modificado para tener padding uniforme */
+}
+
+.head h2 {
+  text-align: center;
+  margin-bottom: 1%;
+
+}
+
+.cerrarSesion {
+  float: right;
+  color: white;
+  margin-top: -4%;
+  margin-right: 1%;
+}
+
+.portal {
+  float: left;
+  color: white;
+  margin-top: -4%;
+  margin-left: 1%;
+}
+
+
+
+/* Añade esto a tu archivo listadoAlumno.css */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  width: 30%;
+}
+
+.grid-item {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.radio-group label {
+  margin-right: 5px;
+}
+
+.submit-container {
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+input[type="submit"] {
+  background-color: #c2002f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+  background-color: #a7002a;
+}
+
+h3 {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 50%;
+  border-radius: 5px;
+  transition: filter 0.3s;
+  border: solid 1px black;
+}
+.img-asistencia {
+  filter: none; /* Sin filtro para asistencia */
+}
+
+.img-retraso {
+  filter: sepia(1) hue-rotate(20deg) brightness(0.5);
+}
+
+/* Filtro para efecto rojo translúcido */
+.img-ausente {
+  filter: sepia(1) hue-rotate(-50deg) brightness(0.5);
+}
+
+input[type="date"],
+select {
+  padding: 1.5%;
+  margin: 10px 0;
+  border: 1px solid #c2002f;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.date-time-selection label {
+  margin-left: 5%;
+  color: #333;
+  font-weight: bold;
+}
+
+.date-time-selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 50%;
+}
+
+input[type="radio"]:checked {
+  accent-color: #c2002f; /* Cambia el color del punto interno del radio */
+}
+
+/* Estilo para las etiquetas de los inputs tipo radio */
+.radio-group label {
+  cursor: pointer;
+  color: #333; /* Color del texto de las etiquetas */
+  font-size: 14px; /* Tamaño de la fuente de las etiquetas */
+  padding: 5px; /* Espaciado interno de las etiquetas */
+  border-radius: 3px; /* Bordes redondeados para las etiquetas */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave para los cambios de color */
+}
+
+/* Cambia el fondo y el color del texto de las etiquetas al pasar el mouse sobre ellas */
+.radio-group label:hover {
+  background-color: #c2002f;
+  color: white;
+}
+
+/* Estilo para las etiquetas cuando su input radio asociado está seleccionado */
+input[type="radio"]:checked + label {
+  background-color: #c2002f;
+  color: white;
+}
+
+input[type="text"]
+{
+  width: 70%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.cerrarSesion, .portal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  
+  
+}
+
+.material-icons {
+  font-size: 72px;
+  
+}

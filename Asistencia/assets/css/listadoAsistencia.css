@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  font-family: Arial, sans-serif;
+}
+
+
+
+h3 {
+  color: white;
+}
+
+
+select {
+    padding: 0.2%;
+    margin: 1% 0;
+    border: 1px solid #c2002f;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.head {
+  width: 100%;
+  color: white;
+  background-color: #c2002f;
+  padding: 1% 0;
+  /* Modificado para tener padding uniforme */
+}
+.container {
+
+  height: 700px;
+  background-image: url('../fotos/logoNebrija.png');
+  background-size: 50%; /* o 100% 100%, dependiendo de tus necesidades */
+  background-repeat: no-repeat;
+  background-position: center; /* Centra la imagen */
+}
+
+
+
+
+.head h2 {
+  text-align: center;
+  margin-bottom: 1%;
+
+}
+
+.head h3 {
+  text-align: center;
+  margin-bottom: 1%;
+
+}
+
+
+
+.cerrarSesion {
+  float: right;
+  color: white;
+  margin-top: -4%;
+  margin-right: 1%;
+}
+
+.portal {
+  float: left;
+  color: white;
+  margin-top: -4%;
+  margin-left: 1%;
+}
+
+.cerrarSesion,
+.portal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+
+
+}
+
+.material-icons {
+  font-size: 72px;
+
+}
+
+.contenedor-flex {
+  display: flex;
+}
+
+
+#detalle-alumno {
+  width: 70%;
+  margin-left: 10%;
+  margin-top: 2%;
+  border-radius: 2%;
+  padding: 2%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to top, white 80%, #c2002f);
+
+}
+
+.centro-usuario {
+  margin: auto;
+  font-size: x-large;
+
+
+}
+
+.centro-usuario img {
+  width: 15%;
+  border-radius: 2%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para la lista de alumnos */
+.alumnos-lista {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.especialidades-lista h3 {
+  color: #c2002f;
+
+}
+
+
+.alumno-item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.alumno-item label {
+  display: flex;
+  align-items: center;
+  gap: 30px; 
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+
+
+
+.especialidad-item a {
+  display: block;
+
+  padding: 10px 15px;
+ 
+  background-color: #c2002f;
+
+  color: white;
+
+  border-radius: 8px;
+ 
+  text-decoration: none;
+
+  font-size: 1em;
+  
+  margin: 5px 0;
+  
+  text-align: center;
+
+}
+
+.especialidad-item a:hover {
+  background-color: #a1001e;
+  
+  color: #fff;
+
+}
+
+/* Ajustes para centrar verticalmente y dar espacio alrededor de la lista de especialidades */
+.especialidades-lista {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 4%;
+  padding: 4%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 4%;
+
+}
+
+#mensaje {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.justificar{
+  background-color: #c2002f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+.justificar:hover{
+  background-color: #a1001e;
+}
+
+
+
+
+
+/* Animación slide-in-right */
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-right {
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* Estilo básico del switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px; /* Ancho aún más reducido */
+  height: 18px; /* Altura aún más reducida */
+}
+
+/* Estilo del input checkbox - se oculta ya que será personalizado */
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Estilo de la palanca del switch */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px; /* Altura aún más reducida de la palanca */
+  width: 14px; /* Ancho aún más reducido de la palanca */
+  left: 2px; /* Ajuste del margen izquierdo */
+  bottom: 2px; /* Ajuste del margen inferior */
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* Resto del código... */
+
+
+/* Cambio de color al estar activo/checked */
+input:checked + .slider {
+  background-color: #c2002f;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #c2002f;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+/* Estilo redondeado */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

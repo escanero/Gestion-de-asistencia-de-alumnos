@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  font-family: Arial, sans-serif;
+  /* Agregamos una fuente por defecto */
+}
+
+.head {
+  width: 100%;
+  color: white;
+  background-color: #c2002f;
+  padding: 1% 0;
+  /* Modificado para tener padding uniforme */
+}
+
+.head h2 {
+  text-align: center;
+  margin-bottom: 1%;
+  /* Modificado para usar margin en lugar de padding */
+}
+
+.head a {
+  float: right;
+  color: white;
+  margin-top: -3%;
+  margin-right: 2%;
+}
+
+
+/* Estilos para el formulario */
+.form-container {
+  max-width: 30%;
+  /* Ancho máximo para el formulario */
+  margin: 2% auto;
+  /* Centra el formulario y añade un poco de espacio arriba y abajo */
+  padding: 2%;
+  /* Espaciado interior */
+  background-color: #fff;
+  /* Fondo blanco para el formulario */
+  border: 1px solid #ddd;
+  /* Borde sutil */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombra ligera para dar profundidad */
+  border-radius: 3%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+form label {
+  margin-top: 10px;
+  /* Espaciado superior para la etiqueta */
+  margin-bottom: 5px;
+  /* Espaciado inferior para la etiqueta */
+}
+
+form select,
+form input[type="date"],
+form input[type="submit"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  /* Espaciado inferior para cada input */
+  border: 1px solid #ccc;
+  /* Borde sutil */
+  border-radius: 4px;
+  /* Bordes redondeados */
+}
+
+form input[type="submit"] {
+  background-color: #c2002f;
+  /* Color de fondo del botón submit */
+  color: white;
+  /* Color de texto del botón submit */
+  cursor: pointer;
+  /* Cursor en forma de mano al pasar por encima del botón */
+  border: none;
+  /* Eliminamos el borde para el botón submit */
+}
+
+form input[type="submit"]:hover {
+  background-color: #a10027;
+  /* Oscurecemos el botón al pasar por encima */
+}
+
+
+
+.boton{
+  display: inline-block; /* Hace que el enlace se comporte como un bloque para permitir el padding */
+  padding: 10px 20px; /* Espaciado alrededor del texto para que parezca un botón */
+  background-color: #c2002f; /* Color de fondo similar al del botón de submit */
+  color: white; /* Color de texto blanco */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  border-bottom-left-radius: 4%;
+  border-bottom-right-radius: 4%; /* Bordes redondeados */
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2); /* Sombra ligera para un efecto 3D */
+  font-weight: bold; /* Texto en negrita */
+  transition: background-color 0.3s; /* Transición suave para el cambio de color */
+  margin-left: 2%;
+}
+
+.boton:hover {
+  background-color: #a10027; /* Cambio de color al pasar el ratón por encima */
+}

@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    width: 100%;
+    color: white;
+    background-color: #c2002f;
+    padding: 1% 0;
+}
+
+.head h2 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.cerrarSesion, .portal {
+    float: right;
+    color: white;
+    margin-top: -4%;
+    margin-right: 1%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h3, h4 {
+    color: #c2002f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2%;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 1%;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Agregando estilos para los enlaces dentro de .head */
+.head a {
+    float: right;
+    color: white;
+    margin-top: -3%;
+    margin-right: 2%;
+    text-decoration: none;
+}
+
+/* Estilos para los enlaces en estado hover */
+.head a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para los inputs de texto */
+input[type="text"] {
+    width: 70%;
+    padding: 1%;
+    margin: 1% 0;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+/* Estilos para los botones de tipo submit */
+input[type="submit"] {
+    background-color: #c2002f;
+    color: white;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #a7002a;
+}
+
+
+/* Estilos para los inputs de tipo date y select */
+input[type="date"],
+select {
+    padding: 0.2%;
+    margin: 1% 0;
+    border: 1px solid #c2002f;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+

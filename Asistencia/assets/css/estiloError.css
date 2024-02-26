@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+    /* Agregamos una fuente por defecto */
+  }
+  
+  .head {
+    width: 100%;
+    color: white;
+    background-color: #c2002f;
+    padding: 1% 0;
+    /* Modificado para tener padding uniforme */
+  }
+  
+  .head h2 {
+    text-align: center;
+    margin-bottom: 1%;
+    /* Modificado para usar margin en lugar de padding */
+  }
+  
+  .head a {
+    float: right;
+    color: white;
+    margin-top: -4%;
+    margin-right: 1%;
+  }
+  .datos2{
+    
+    text-align: center;
+    margin-top: 100px;
+    height: 300px;
+  }
+ 
+  
+  .imagen {
+    padding-top: 1%;
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+
+  
+  footer {
+    margin-top: 5%;
+    width: 100%;
+    color: white;
+    background-color: #c2002f; 
+    text-align: center;
+    padding: 1% 0;
+  }
+  
+  .social-links {
+    padding: 10px 0;
+  }
+  
+  .social-icon {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: #ddd; /* Color al pasar el ratón por encima */
+  }
+  
+  
+   
+  
+  
